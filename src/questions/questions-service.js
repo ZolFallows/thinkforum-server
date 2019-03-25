@@ -10,7 +10,6 @@ const userFields = [
 
 const QuestionsService = {
     getAllQuestions(db) {
-        // return db.select('*').from('forum_questions')
         return db
             .from('forum_questions AS qs')
             .select(
