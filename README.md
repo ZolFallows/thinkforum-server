@@ -19,17 +19,17 @@ The app provides users with the following functions:
 
 # Technology
 
-##Front-end
+## Front-end
 
 * [Thinkful-Client](https://github.com/ZolFallows/thinkforum-client)
 
-##Back-end
+## Back-end
 
 * Node.js and Express.js 
 * PostgreSQL
 * bcryptjs, morgan, helmet, jsonwebtoken, treeize, xss, knex.js
 
-##Testing
+## Testing
 
 * Chai
 * Mocha
