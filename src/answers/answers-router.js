@@ -13,9 +13,11 @@ answersRouter
         const newAnswer = { question_id, text }
         for(const [key, value] of Object.entries(newAnswer)){
             if(value == null){
-            return `Missing ${key} in request body`
+            return res.status(400).json({ error: `Missing ${key} in request body`})
             }
         }
+
+
 
         newAnswer.user_id = req.user.id
 

@@ -37,7 +37,6 @@ const AnswersService = {
           .returning('*')
           .then(([answer]) => answer)
           .then(answer => {
-            console.log(AnswersService.getById(db, answer.id))
              return AnswersService.getById(db, answer.id)
           }
             

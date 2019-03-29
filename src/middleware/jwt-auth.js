@@ -18,7 +18,7 @@ function requireAuth(req, res, next){
             .getUserByUsername(req.app.get('db'), payload.sub)
             .then(user => {
                 if(!user){
-                    return res.status(401).json({ error: 'Missing bearer token' });              
+                    return res.status(401).json({ error: 'Unauthorized request' });              
                 }
                 req.user = user
                 next()
@@ -27,7 +27,7 @@ function requireAuth(req, res, next){
                 next(error)
             })
     } catch (error){
-        res.send(401).json({ error: 'Unauthorized request'})
+        res.status(401).json({ error: 'Unauthorized request'})
     }
 }
 
