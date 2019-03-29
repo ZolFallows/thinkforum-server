@@ -2,7 +2,7 @@
 
 [ThinkForum](https://thinkforum.now.sh/) is the server side of a full stack React application for 
 exchanging ideas and views on any particular issues through form of posted messages/discussions. 
-The main inspiration behind the app was to provide a simple and intresting app for ThinkFul 
+The main inspiration behind the app was to provide a simple and interesting app for ThinkFul 
 students to create descussions in more orginised manner.
 
 
