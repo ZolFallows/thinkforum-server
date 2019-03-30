@@ -14,7 +14,7 @@ The app provides users with the following functions:
 * Sing in for returning users
 * Edit the user profile and delete disccussions 
 * Create new discussion
-* Access and reply/comment discussion threads 
+* Access discussion threads and reply/comment  
 * Integrated search feature for discussions via title/topic
 
 # Technology
