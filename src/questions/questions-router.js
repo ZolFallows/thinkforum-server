@@ -25,7 +25,7 @@ questionsRouter
         }
 
         newQuestion.user_id = req.user.id
-    //  console.log(req.user.id)
+
         QuestionsService
         .inserQuestion(req.app.get('db'), newQuestion)
         .then(question =>{
@@ -58,7 +58,6 @@ questionsRouter
     .all(requireAuth)
     .all(isQuestionExist)
     .get((req, res, next) => {
-        // console.log(req)
         QuestionsService
             .getAnswersForQuestion(
                 req.app.get('db'),
